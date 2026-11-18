@@ -34,7 +34,7 @@
     <string name="dark_appearance_dims_wallpaper">Giao diện tối làm tối hình nền</string>
     <string name="darken_behind_text">Làm tối phía sau chữ</string>
     <string name="launcher_background">Nền trình khởi chạy</string>
-    <string name="changes_the_image_behind_folio_s_home_sc">Thay đổi hình ảnh phía sau các màn hình chính của Folio. </string>
+    <string name="changes_the_image_behind_folio_s_home_sc">Thay đổi hình ảnh phía sau các màn hình chính của Folio.\u0020</string>
     <string name="cancel">Hủy</string>
     <string name="apply">Áp dụng</string>
     <string name="opens_android_s_preview_to_use_folio_s_b">Mở màn hình xem trước của Android để dùng nền Folio làm hình nền điện thoại (hình nền động), nhờ đó giao diện bên ngoài Folio cũng đồng bộ.</string>
