@@ -1,3 +1,4 @@
+
 name: CI
 
 on:
@@ -80,6 +81,16 @@ jobs:
       # first, so this covers both the Kotlin tests and the Java fixtures.
       - name: Instrumented tests compile
         run: ./gradlew :app:compileDebugAndroidTestJavaWithJavac
+
+      # Upload the APK only after all build checks have passed.
+      - name: Upload debug APK
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: folio-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 14
 
   # The parts of the releases standard a machine can see: a change to what ships carries its own changelog line,
   # and a version bump comes on its own (docs/standards/releases.md, REL-7 and REL-13). Pull requests only, since
